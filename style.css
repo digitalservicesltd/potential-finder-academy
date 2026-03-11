@@ -145,6 +145,11 @@ body {
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid transparent;
     transition: var(--transition-medium);
+    .logo-img{
+    height:40px;
+    width:auto;
+    object-fit:contain;
+}
 }
 
 .navbar.scrolled {
@@ -1340,6 +1345,7 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    
 }
 
 .footer-tagline {
@@ -1419,4 +1425,8 @@ button:focus-visible {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+.footer-logo{
+    height:50px;
+    width:auto;
 }
