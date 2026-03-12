@@ -1430,3 +1430,6 @@ button:focus-visible {
     height:50px;
     width:auto;
 }
+html, body {
+  overflow-x: hidden;
+}
