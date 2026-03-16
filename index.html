@@ -7,507 +7,166 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="description" content="Premium coaching for Math, Physics, and Chemistry by Pankaj Kumar. B.Ed, HP TET & CTET Qualified.">
     <meta property="og:title" content="Potential Finder Academy">
-<meta property="og:description" content="Maths Physics Chemistry Coaching">
-<meta property="og:image" content="https://potentialfinder.online/images/logo.png">
-<meta property="og:url" content="https://potentialfinder.online">
-    <!-- Fonts -->
+    <meta property="og:description" content="Maths Physics Chemistry Coaching">
+    <meta property="og:image" content="https://potentialfinder.online/images/logo.png">
+    <meta property="og:url" content="https://potentialfinder.online">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
-    <!-- Typed.js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-ring"></div>
-
-    <!-- Particles Container -->
-    <div id="particles-js"></div>
-
-    <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">
-    <img src="images/logo.png" alt="PFA Logo" class="logo-img">
-    <span class="logo-glow"></span>
-</a>
-            
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            
+            <a href="#" class="nav-logo"><img src="images/logo.png" alt="PFA Logo" class="logo-img"></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#hero" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#courses" class="nav-link">Courses</a></li>
                 <li><a href="#stats" class="nav-link">Results</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li>
-                    <a href="https://wa.me/918894868857" target="_blank" class="nav-cta">
-                        <span>Enroll Now</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </li>
+                <li><a href="https://wa.me/918894868857" target="_blank" class="nav-cta"><span>Enroll Now</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="hero-bg">
-            <video class="hero-video" autoplay muted loop playsinline>
-                <source src="star.mp4" type="video/mp4">
-            </video>
-            <div class="hero-overlay"></div>
-        </div>
-        
         <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                    </svg>
-                </span>
-                <span>Excellence in Education Since 2024</span>
-            </div>
-            
-            <h1 class="hero-title">
-                <span class="title-line">Potential Finder</span>
-                <span class="title-line accent">Academy</span>
-            </h1>
-            
-            <p class="hero-tagline">
-                <span id="typed"></span>
-            </p>
-            
+            <div class="hero-badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>Excellence in Education Since 2024</span></div>
+            <h1 class="hero-title"><span class="title-line">Potential Finder</span><span class="title-line accent">Academy</span></h1>
+            <p class="hero-tagline">Turning Potential into Performance</p>
             <div class="hero-buttons">
-                <a href="https://wa.me/918894868857" target="_blank" class="btn btn-primary">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                    </svg>
-                    <span>Enroll via WhatsApp</span>
-                </a>
-                <a href="#courses" class="btn btn-secondary">
-                    <span>Explore Courses</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-            
-            <div class="hero-scroll">
-                <span>Scroll to explore</span>
-                <div class="scroll-indicator">
-                    <div class="scroll-dot"></div>
-                </div>
+                <a href="https://wa.me/918894868857" target="_blank" class="btn btn-primary"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>Enroll via WhatsApp</span></a>
+                <a href="#courses" class="btn btn-secondary"><span>Explore Courses</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Meet Your Mentor</span>
-                <h2 class="section-title">The Man Behind the Mission</h2>
-            </div>
-            
+            <div class="section-header"><span class="section-tag">Meet Your Mentor</span><h2 class="section-title">The Man Behind the Mission</h2></div>
             <div class="about-grid">
                 <div class="about-media">
-                    <div class="video-frame">
-                        <div class="video-glow"></div>
-                        <video class="instructor-video" autoplay muted loop playsinline poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600'%3E%3Crect fill='%231a1a2e' width='400' height='600'/%3E%3Ctext x='50%25' y='50%25' fill='%237c3aed' font-family='Orbitron' font-size='24' text-anchor='middle' dy='.3em'%3EInstructor Video%3C/text%3E%3C/svg%3E">
-                            <!-- Replace with actual video path -->
-                            <source src="instructor.mp4" type="video/mp4">
-                        </video>
-                        <div class="video-badge">
-                            <span>Pankaj Kumar</span>
-                        </div>
+                    <div class="photo-frame">
+                        <img src="images/instructor.png" alt="Pankaj Kumar - Founder & Lead Instructor" class="instructor-photo">
+                        <div class="photo-badge"><span>Pankaj Kumar</span></div>
                     </div>
                 </div>
-                
-                <div class="about-content">
+                <div class="about-content fade-in">
                     <div class="about-intro">
                         <h3 class="about-name">Pankaj Kumar</h3>
                         <p class="about-role">Founder & Lead Instructor</p>
-                        <p class="about-desc">
-                            A passionate educator with over a 3 years of experience in shaping young minds. 
-                            Specializing in Mathematics, Physics, and Chemistry for classes 6th to 12th. 
-                            My teaching philosophy centers on making complex concepts accessible and igniting 
-                            curiosity in every student.
-                        </p>
+                        <p class="about-desc">A passionate educator with over a 3 years of experience in shaping young minds. Specializing in Mathematics, Physics, and Chemistry for classes 6th to 12th. My teaching philosophy centers on making complex concepts accessible and igniting curiosity in every student.</p>
                     </div>
-                    
                     <div class="qualifications">
                         <h4 class="qual-title">Qualifications & Certifications</h4>
                         <div class="qual-grid">
-                            <div class="qual-badge">
-                                <div class="qual-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
-                                    </svg>
-                                </div>
-                                <div class="qual-info">
-                                    <span class="qual-name">B.Sc (Non-Medical)</span>
-                                    <span class="qual-detail">Science Graduate</span>
-                                </div>
-                            </div>
-                            
-                            <div class="qual-badge">
-                                <div class="qual-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                                    </svg>
-                                </div>
-                                <div class="qual-info">
-                                    <span class="qual-name">B.Ed</span>
-                                    <span class="qual-detail">Bachelor of Education</span>
-                                </div>
-                            </div>
-                            
-                            <div class="qual-badge highlight">
-                                <div class="qual-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                                    </svg>
-                                </div>
-                                <div class="qual-info">
-                                    <span class="qual-name">HP TET Qualified</span>
-                                    <span class="qual-detail">Himachal Pradesh TET</span>
-                                </div>
-                            </div>
-                            
-                            <div class="qual-badge highlight">
-                                <div class="qual-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
-                                    </svg>
-                                </div>
-                                <div class="qual-info">
-                                    <span class="qual-name">CTET Qualified (2x)</span>
-                                    <span class="qual-detail">Central TET - Twice Cleared</span>
-                                </div>
-                            </div>
+                            <div class="qual-badge"><div class="qual-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div class="qual-info"><span class="qual-name">B.Sc (Non-Medical)</span><span class="qual-detail">Science Graduate</span></div></div>
+                            <div class="qual-badge"><div class="qual-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div><div class="qual-info"><span class="qual-name">B.Ed</span><span class="qual-detail">Bachelor of Education</span></div></div>
+                            <div class="qual-badge highlight"><div class="qual-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="qual-info"><span class="qual-name">HP TET Qualified</span><span class="qual-detail">Himachal Pradesh TET</span></div></div>
+                            <div class="qual-badge highlight"><div class="qual-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div><div class="qual-info"><span class="qual-name">CTET Qualified (2x)</span><span class="qual-detail">Central TET - Twice Cleared</span></div></div>
                         </div>
                     </div>
-                    
-                    <div class="about-quote">
-                        <blockquote>
-                            "Every student has infinite potential. My job is to help them discover it."
-                        </blockquote>
-                    </div>
+                    <div class="about-quote"><blockquote>"Every student has infinite potential. My job is to help them discover it."</blockquote></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Courses Section -->
     <section class="courses" id="courses">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Programs</span>
-                <h2 class="section-title">Courses Designed for Excellence</h2>
-                <p class="section-subtitle">Comprehensive coaching programs tailored to unlock every student's true potential</p>
-            </div>
-            
+            <div class="section-header"><span class="section-tag">Our Programs</span><h2 class="section-title">Courses Designed for Excellence</h2><p class="section-subtitle">Comprehensive coaching programs tailored to unlock every student's true potential</p></div>
             <div class="courses-grid">
-                <div class="course-card foundation">
-                    <div class="course-glow"></div>
+                <div class="course-card fade-in">
                     <div class="course-content">
-                        <div class="course-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-                            </svg>
-                        </div>
+                        <div class="course-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
                         <div class="course-badge">Most Popular</div>
                         <h3 class="course-title">Foundation Program</h3>
                         <p class="course-subtitle">Building Strong Basics</p>
-                        <div class="course-grades">
-                            <span class="grade">Class 6th - 10th</span>
-                        </div>
+                        <div class="course-grades"><span class="grade">Class 6th - 10th</span></div>
                         <ul class="course-features">
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>Conceptual Clarity in Math & Science</span>
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>NCERT Focused Approach</span>
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>Regular Tests & Assessments</span>
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>Doubt Clearing Sessions</span>
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>Parent-Teacher Meetings</span>
-                            </li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Conceptual Clarity in Math & Science</span></li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>NCERT Focused Approach</span></li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Regular Tests & Assessments</span></li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Doubt Clearing Sessions</span></li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Parent-Teacher Meetings</span></li>
                         </ul>
-                        <div class="course-subjects">
-                            <span class="subject">Mathematics</span>
-                            <span class="subject">Physics</span>
-                            <span class="subject">Chemistry</span>
-                        </div>
-                        <a href="https://wa.me/918894868857?text=Hi, I'm interested in Foundation Program for classes 6-10" target="_blank" class="course-cta">
-                            <span>Enroll Now</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
+                        <div class="course-subjects"><span class="subject">Mathematics</span><span class="subject">Physics</span><span class="subject">Chemistry</span></div>
+                        <a href="https://wa.me/918894868857?text=Hi, I'm interested in Foundation Program for classes 6-10" target="_blank" class="course-cta"><span>Enroll Now</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
-                
-                <div class="course-card advanced">
-                    <div class="course-glow"></div>
+                <div class="course-card fade-in">
                     <div class="course-content">
-                        <div class="course-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
-                            </svg>
-                        </div>
+                        <div class="course-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
                         <div class="course-badge premium">Advanced</div>
                         <h3 class="course-title">Advanced Program</h3>
                         <p class="course-subtitle">Excellence in Board & Competitive Exams</p>
-                        <div class="course-grades">
-                            <span class="grade">Class 11th - 12th</span>
-                        </div>
+                        <div class="course-grades"><span class="grade">Class 11th - 12th</span></div>
                         <ul class="course-features">
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>In-depth Subject Mastery</span>
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>Board Exam Preparation</span>
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>JEE/NEET Foundation</span>
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>Previous Year Paper Practice</span>
-                            </li>
-                            <li>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                                <span>Personal Mentorship</span>
-                            </li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>In-depth Subject Mastery</span></li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Board Exam Preparation</span></li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>JEE/NEET Foundation</span></li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Previous Year Paper Practice</span></li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Personal Mentorship</span></li>
                         </ul>
-                        <div class="course-subjects">
-                            <span class="subject">Mathematics</span>
-                            <span class="subject">Physics</span>
-                            <span class="subject">Chemistry</span>
-                        </div>
-                        <a href="https://wa.me/918894868857?text=Hi, I'm interested in Advanced Program for classes 11-12" target="_blank" class="course-cta">
-                            <span>Enroll Now</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </a>
+                        <div class="course-subjects"><span class="subject">Mathematics</span><span class="subject">Physics</span><span class="subject">Chemistry</span></div>
+                        <a href="https://wa.me/918894868857?text=Hi, I'm interested in Advanced Program for classes 11-12" target="_blank" class="course-cta"><span>Enroll Now</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
     <section class="stats" id="stats">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Impact</span>
-                <h2 class="section-title">Numbers That Speak</h2>
-            </div>
-            
+            <div class="section-header"><span class="section-tag">Our Impact</span><h2 class="section-title">Our Teaching Impact</h2></div>
             <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                    </div>
-                    <div class="stat-number" data-target="150">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Students Taught</div>
-                    <p class="stat-desc">Young minds shaped and guided towards excellence</p>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                        </svg>
-                    </div>
-                    <div class="stat-number" data-target="3">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Core Subjects</div>
-                    <p class="stat-desc">Mathematics, Physics, and Chemistry expertise</p>
-                </div>
-                
-                <div class="stat-card highlight">
-                    <div class="stat-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
-                        </svg>
-                    </div>
-                    <div class="stat-number" data-target="2">0</div>
-                    <div class="stat-suffix">x</div>
-                    <div class="stat-label">CTET Qualified</div>
-                    <p class="stat-desc">Nationally recognized teaching certification</p>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-                        </svg>
-                    </div>
-                    <div class="stat-number" data-target="3">0</div>
-                    <div class="stat-suffix">+</div>
-                    <div class="stat-label">Years Experience</div>
-                    <p class="stat-desc">A place of dedicated teaching excellence</p>
-                </div>
+                <div class="stat-card fade-in"><div class="stat-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="stat-number" data-target="150">0</div><div class="stat-suffix">+</div><div class="stat-label">Students Taught</div><p class="stat-desc">Young minds shaped and guided towards excellence</p></div>
+                <div class="stat-card fade-in"><div class="stat-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div><div class="stat-number" data-target="3">0</div><div class="stat-suffix">+</div><div class="stat-label">Core Subjects</div><p class="stat-desc">Mathematics, Physics, and Chemistry expertise</p></div>
+                <div class="stat-card highlight fade-in"><div class="stat-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div><div class="stat-number" data-target="2">0</div><div class="stat-suffix">x</div><div class="stat-label">CTET Qualified</div><p class="stat-desc">Nationally recognized teaching certification</p></div>
+                <div class="stat-card fade-in"><div class="stat-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="stat-number" data-target="3">0</div><div class="stat-suffix">+</div><div class="stat-label">Years Experience</div><p class="stat-desc">A place of dedicated teaching excellence</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get In Touch</span>
-                <h2 class="section-title">Start Your Journey Today</h2>
-                <p class="section-subtitle">Have questions? We're here to help you take the first step</p>
-            </div>
-            
+            <div class="section-header"><span class="section-tag">Get In Touch</span><h2 class="section-title">Start Your Journey Today</h2><p class="section-subtitle">Have questions? We're here to help you take the first step</p></div>
             <div class="contact-grid">
-                <div class="contact-card call">
-                    <div class="contact-glow"></div>
-                    <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                        </svg>
-                    </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
                     <h3 class="contact-title">Call Us</h3>
                     <p class="contact-desc">Speak directly with Pankaj Kumar for admissions and queries</p>
-                    <a href="tel:+918219928236" class="contact-link">
-                        <span>+91 82199 28236</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
+                    <a href="tel:+918219928236" class="contact-link"><span>+91 82199 28236</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     <p class="contact-time">Available: Mon-Sat, 9 AM - 7 PM</p>
                 </div>
-                
-                <div class="contact-card whatsapp">
-                    <div class="contact-glow"></div>
-                    <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                        </svg>
-                    </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-icon whatsapp-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
                     <h3 class="contact-title">WhatsApp</h3>
                     <p class="contact-desc">Quick responses for admissions, schedules, and general queries</p>
-                    <a href="https://wa.me/918894868857" target="_blank" class="contact-link">
-                        <span>+91 88948 68857</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
+                    <a href="https://wa.me/918894868857" target="_blank" class="contact-link"><span>+91 88948 68857</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     <p class="contact-time">Typically replies within 1 hour</p>
                 </div>
-                
-                <div class="contact-card address">
-                    <div class="contact-glow"></div>
-                    <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                        </svg>
-                    </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                     <h3 class="contact-title">Visit Us</h3>
                     <p class="contact-desc">Come visit our academy for a campus tour and counseling session</p>
-                    <address class="contact-address">
-                        Ground Floor, Below Manish General Store,<br>
-                        Aundi Khas - 176202,<br>
-                        Himachal Pradesh, India
-                    </address>
-                    <a href="https://maps.google.com/?q=Aundi+Khas+176202+Himachal+Pradesh" target="_blank" class="contact-link">
-                        <span>Get Directions</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
+                    <address class="contact-address">Ground Floor, Below Manish General Store,<br>Aundi Khas - 176202,<br>Himachal Pradesh, India</address>
+                    <a href="https://maps.google.com/?q=Aundi+Khas+176202+Himachal+Pradesh" target="_blank" class="contact-link"><span>Get Directions</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
             </div>
-            
-            <div class="map-container">
-                <div class="map-placeholder">
-                    <div class="map-overlay">
-                        <div class="map-content">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                            </svg>
-                            <p>Interactive Map</p>
-                            <a href="https://maps.google.com/?q=Aundi+Khas+176202+Himachal+Pradesh" target="_blank" class="map-btn">Open in Google Maps</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="map-container"><div class="map-placeholder"><div class="map-overlay"><div class="map-content"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><p>Interactive Map</p><a href="https://maps.google.com/?q=Aundi+Khas+176202+Himachal+Pradesh" target="_blank" class="map-btn">Open in Google Maps</a></div></div></div></div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-    <div class="footer-content">
-        <div class="footer-brand">
-            <img src="images/logo.png" alt="PFA Logo" class="footer-logo">
-            <p class="footer-tagline">Turning Potential into Performance</p>
-        </div>
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#courses">Courses</a>
-                <a href="#contact">Contact</a>
-            </div>
+        <div class="footer-content">
+            <div class="footer-brand"><img src="images/logo.png" alt="PFA Logo" class="footer-logo"><p class="footer-tagline">Turning Potential into Performance</p></div>
+            <div class="footer-links"><a href="#about">About</a><a href="#courses">Courses</a><a href="#contact">Contact</a></div>
             <p class="footer-copyright">Potential Finder Academy &copy; 2025 | Crafted with <span class="heart">&#9829;</span> by Pankaj Kumar</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
